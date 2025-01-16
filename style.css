@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+    height: 300vh;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    position: fixed;
+    background-color: rgb(255, 254, 247);
+    justify-content: space-between;
+    
+}
+#SNS{
+    display: flex;
+    gap: 20px;
+    font-family: 'omyu_pretty';
+    font-size: 20px;
+    align-items: center;
+}
+a{
+    color: purple;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+#container1{
+    display: flex;
+    gap: 40px;
+}
+#hihi{
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+
+}
+#introduce{
+    font-family: 'Cafe24Ssurround';
+    font-size: 40px;
+}
+#hi{
+    font-family: 'omyu_pretty';
+    font-size:35px;
+    line-height: 2;
+    
+}
+#mypicture{
+    width: 300px;
+    border-radius: 14%;
+
+}
+
+
+#name2{
+    background-color: rgb(255, 192, 192);
+}
+#home{
+    text-decoration: underline wavy rgb(255, 177, 10);
+}
+#family{
+    text-decoration: underline double rgb(246, 255, 83);
+}
+
+
+
+
+
+
+#name{
+    font-family: 'BMJUA';
+    font-size: 30px;
+    
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+}
+.channel_img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+}
+.channel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#channels{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.channel_text{
+    font-family: "Cafe24Ssurround";
+    font-size: 26px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container2{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text{
+    font-family: 'omyu_pretty';
+    font-size: clamp(30px, 2.5vw, 35px);
+}
+
+
+
+
+
+
+#page3{
+    display: flex;
+    gap: 150px;
+}
+
+#hobby_box{
+    display: flex;
+    flex-direction: column;
+    font-family: 'omyu_pretty';
+    font-size: 30px;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.hobby:hover{
+    
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+
+#gallery{
+    width: clamp(400px, 40vw, 600px);
+    height: clamp(400px, 40vw, 600px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+
+.drawing{
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+@media (max-width:750px) {
+    #container1{
+        flex-direction: column;
+    }
+    #mypicture{
+        width: 200px;
+    }
+    #introduce{
+        font-size: 26px;
+    }
+    #hi{
+        font-size: 23px;
+    }
+    #container2{
+        padding: 0px 20px;
+        height: 50vh;
+    }
+    #page3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #game{
+        display: none;
+    }
+}
+
+
+@media (max-width:400px) {
+    #gallery{
+        width: 90vw;
+        height: 90vw;
+    }
+    .channel_text{
+        font-size: 20px;
+    }
+    .channel_img{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
