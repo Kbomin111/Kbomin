@@ -223,6 +223,10 @@ a{
     padding-left: 30px;
 }
 
+.hobby{
+    cursor: pointer;
+}
+
 .hobby:hover{
     
     transform: scale(1.2);
@@ -231,7 +235,7 @@ a{
 
 
 
-#gallery{
+.gallery{
     width: clamp(400px, 40vw, 600px);
     height: clamp(400px, 40vw, 600px);
     display: grid;
@@ -240,11 +244,15 @@ a{
     gap: 10px;
 }
 
-.drawing{
+.pic{
     object-fit: cover;
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 20px;
+}
+
+.hidden{
+    display: none;
 }
 
 @media (max-width:750px) {
